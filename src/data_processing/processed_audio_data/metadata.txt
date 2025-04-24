@@ -1,0 +1,25 @@
+Balance dataset metadata
+====================
+
+Total number of files: 750
+
+The number of files in each emotion category:
+Positive: 250
+Negative: 250
+Neutral: 250
+
+The subclass distribution in each emotion category:
+
+Positive subclass distribution:
+  03 (Happy): 129
+  08 (Surprised): 121
+
+Negative subclass distribution:
+  07 (Disgust): 75
+  05 (Angry): 63
+  04 (Sad): 56
+  06 (Fearful): 56
+
+Neutral subclass distribution:
+  02 (Calm): 168
+  01 (Neutral): 82
