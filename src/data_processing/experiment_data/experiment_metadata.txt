@@ -1,9 +1,9 @@
 Experiment Dataset Metadata
 ====================
 
-Target samples per category: 50
+Target samples per category: 250
 
 Actual file count per emotion category:
-Positive: 50
-Neutral: 50
-Negative: 50
+Positive: 250
+Neutral: 250
+Negative: 250
