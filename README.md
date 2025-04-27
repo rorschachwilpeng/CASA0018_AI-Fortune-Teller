@@ -3,7 +3,7 @@ MSc Connected Environments | CASA0018 | University College London
 Author: Youtian Peng
 
 <div style="text-align: center;">
-  <img src="Img/cover.png" alt="Flowchart" width="2000">
+  <img src="img/cover.png" alt="Flowchart" width="2000">
 </div>
 
 ---
