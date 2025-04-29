@@ -50,3 +50,31 @@ The video presentation outlines the full journey of the project:
   Limitations were identified in feature diversity, real-world robustness, and deployment latency optimization, informing future improvement directions.
 
 ---
+
+## 🔧 Technical Architecture
+
+This section outlines the key components and design considerations of the AI Fortune Teller system.
+
+
+### 🔌 Hardware Components
+
+The project employs the Arduino Nano 33 BLE Sense Lite as its computational core, leveraging its built-in machine learning capabilities and low power requirements. Two primary sensors facilitate interaction: a Grove Sound Sensor connected to analog pin A0 captures the user's speech, while a Touch Sensor connected to digital pin D2 detects user engagement. The onboard RGB LED provides intuitive visual feedback through color-coded responses that correspond to detected emotional states.
+
+
+### 🧠 Code Logic
+
+The system operates through a structured interaction flow where the touch sensor acts as the primary input trigger. When users press and hold the touch sensor, the device begins collecting audio data through the sound sensor. This raw audio data is normalized and stored in a buffer until either the buffer is full or the user releases the touch sensor.
+
+The core emotion analysis relies on a lightweight CNN model trained on the RAVDESS dataset, which classifies speech into three emotional polarities: Positive, Neutral, and Negative. These classifications, rather than specific emotion categories, were chosen to optimize accuracy within the model's size constraints.
+
+Upon classification, the system selects a thematically appropriate fortune response from its internal database, with visual feedback provided through color-coded LEDs: green for positive, blue for neutral, and red for negative predictions. This creates a seamless experience from question to fortune revelation.
+
+
+
+### 📦 Enclosure Design
+<div style="text-align: center;">
+  <img src="img/enclosure.png" alt="AI Fortune Teller Enclosure" width="600">
+</div>
+The enclosure employs a rapid prototyping approach using sustainable, repurposed materials. This design choice reflects both the iterative nature of the development process and environmental consciousness. The lightweight, portable enclosure houses all components securely while providing access to the interaction surfaces. Strategic openings allow for optimal audio capture while protecting the internal circuitry. This approach to physical design emphasizes functionality and accessibility while enabling quick iterations during the development cycle.
+
+---
